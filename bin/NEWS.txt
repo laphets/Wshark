@@ -1,0 +1,157 @@
+Wireshark 1.4.9 Release Notes
+
+   ------------------------------------------------------------------
+
+What is Wireshark?
+
+   Wireshark is the world's most popular network protocol analyzer.
+   It is used for troubleshooting, analysis, development and
+   education.
+
+What's New
+
+  Bug Fixes
+
+   The following vulnerabilities have been fixed.
+
+     o wnpa-sec-2011-13
+
+       A malformed IKE packet could consume excessive resources.
+
+       Versions affected: 1.4.0 to 1.4.8, 1.6.0 to 1.6.1.
+
+       CVE-2011-3266
+
+     o wnpa-sec-2011-14
+
+       A malformed capture file could result in an invalid root
+       tvbuff and cause a crash. (Bug 6135)
+
+       Versions affected: 1.4.0 to 1.4.8, 1.6.0 to 1.6.1.
+
+     o wnpa-sec-2011-15
+
+       Wireshark could run arbitrary Lua scripts. (Bug 6136)
+
+       Versions affected: 1.4.0 to 1.4.8, 1.6.0 to 1.6.1.
+
+   The following bugs have been fixed:
+
+     o Unable to configure zero length SNMP Engine ID. (Bug 5731)
+
+     o H.323 RAS packets missing from packet counts in
+       "Telephony->VoIP Calls" and the "Flow Graph" for the call.
+       (Bug 5848)
+
+     o Malformed Packet in decode for BGP-AD update. (Bug 6122)
+
+     o BGP : AS_PATH attribute was decode wrong. (Bug 6188)
+
+     o Fixes for SCPS TCP option. (Bug 6194)
+
+     o Offset calculated incorrectly for sFlow extended data. (Bug
+       6219)
+
+     o [Enter] key behavior varies when manually typing display
+       filters. (Bug 6228)
+
+     o Contents of pcapng EnhancedPacketBlocks with comments aren't
+       displayed. (Bug 6229)
+
+     o Misdecoding 3G Neighbour Cell Information Element in SI2quater
+       message due to a coding typo. (Bug 6237)
+
+     o Mis-spelled word "unknown" in assorted files. (Bug 6244)
+
+     o btl2cap extended window shows wrong bit. (Bug 6257)
+
+     o NDMP dissector incorrectly represents
+       "ndmp.bytes_left_to_read" as signed. (Bug 6262)
+
+     o ERF records with extension headers not written out correctly
+       to pcap or pcap-ng files. (Bug 6265)
+
+     o RTPS2: MAX_BITMAP_SIZE is defined incorrectly. (Bug 6276)
+
+     o Copying from RTP stream analysis copies 1st line many times.
+       (Bug 6279)
+
+     o File types with no snaplen written out with a zero snaplen in
+       pcap-ng files. (Bug 6289)
+
+     o MEGACO context tracking fix - context id reuse. (Bug 6311)
+
+  New and Updated Features
+
+   There are no new features in this release.
+
+  New Protocol Support
+
+   There are no new protocols in this release.
+
+  Updated Protocol Support
+
+   BGP, Bluetooth L2CAP, GSM A RR, H.225, IKE, MEGACO, NDMP, RTPS2,
+   SCPS, sFlow, SNMP
+
+  New and Updated Capture File Support
+
+   CommView, pcap-ng.
+
+Getting Wireshark
+
+   Wireshark source code and installation packages are available from
+   http://www.wireshark.org/download.html.
+
+  Vendor-supplied Packages
+
+   Most Linux and Unix vendors supply their own Wireshark packages.
+   You can usually install or upgrade Wireshark using the package
+   management system specific to that platform. A list of third-party
+   packages can be found on the download page on the Wireshark web
+   site.
+
+File Locations
+
+   Wireshark and TShark look in several different locations for
+   preference files, plugins, SNMP MIBS, and RADIUS dictionaries.
+   These locations vary from platform to platform. You can use
+   About->Folders to find the default locations on your system.
+
+Known Problems
+
+   Wireshark might make your system disassociate from a wireless
+   network on OS X 10.4. (Bug 1315)
+
+   Dumpcap might not quit if Wireshark or TShark crashes. (Bug 1419)
+
+   The BER dissector might infinitely loop. (Bug 1516)
+
+   Capture filters aren't applied when capturing from named pipes.
+   (Bug 1814)
+
+   Filtering tshark captures with display filters (-R) no longer
+   works. (Bug 2234)
+
+   The 64-bit Windows installer does not ship with the same libraries
+   as the 32-bit installer. (Bug 3610)
+
+   Hex pane display issue after startup. (Bug 4056)
+
+   Packet list rows are oversized. (Bug 4357)
+
+   Summary pane selected frame highlighting not maintained. (Bug
+   4445)
+
+Getting Help
+
+   Community support is available on Wireshark's Q&A site and on the
+   wireshark-users mailing list. Subscription information and
+   archives for all of Wireshark's mailing lists can be found on the
+   web site.
+
+   Training is available from Wireshark University.
+
+Frequently Asked Questions
+
+   A complete FAQ is available on the Wireshark web site.
