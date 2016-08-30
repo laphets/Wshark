@@ -10,7 +10,7 @@ Simply,it can help you download music of CloudMusic for which you should pay mon
 Okey,do you now why we call it Wshark?The reason is very easy,because it combines Tshark (which belongs to Wireshark) and Wget for win32.And it can run well in both 32bit and 64bit operate  system.
 
 ## What's new in this new version?
-Firstly,you can choose the interface which the Tsahrk would depend on.
+Firstly,you can choose the interface which the Tsahrk would depend on. \n
 Secondly,we beautify the user interface which you can enjoy you operaion more easily.
 Thirdly,now you can just open "Start.exe" instead of many other bats.
 
