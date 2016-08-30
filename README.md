@@ -1,26 +1,25 @@
 # Wshark V2.1
 
-#How to get it?
-For Windows:
+# How to get it?
+### For Windows:
 ```
 cd Wshark
 start.exe
 cd Download
 ```
 
-For Linux
+### For Linux
 ```
 // Install libs
 sudo apt-get wget
 sudo apt-get tshark
 sudo apt-get g++
-
+// Compile
 cd Wshark
 g++ -o start.cpp && get.cpp
 start
 cd Download
 ```
-
 
 ## What's Wshark?
 A tool which makes getting URLs of CloudMusic and downloading available.
