@@ -1,6 +1,6 @@
 # Wshark V2.1
 
-# How to get it?
+## How to get it?
 ### For Windows:
 ```
 cd Wshark
